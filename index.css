@@ -1,0 +1,893 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  font-family: Ubuntu, sans-serif;
+}
+
+.title{
+  text-align:center;
+  padding:30px 0;
+  font-size:34px;
+  font-weight:600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-up-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  height:40px;
+  width:40px;
+  background:crimson;
+  border-radius:8px;
+  text-align:center;
+  line-height:40px;
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+  opacity:0;
+  trasition:all 0.3s ease;
+  pointer-events:none
+}
+
+.scroll-up-btn.show{
+  opacity:0.4;
+  pointer-events:auto;
+  
+}
+
+.scroll-up-btn:hover{
+  opacity:1;
+}
+
+
+/* ---------------navbar styling-------------- */
+
+.navbar{
+/*   position:fixed; */
+  width:100%;
+  background-color:black;
+  padding: 12px 0;
+}
+
+.max-width{
+/*   background-color:blue; */
+  padding:0 80px;
+  margin:auto;
+}
+
+.navbar .max-width{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar .logo a{
+  font-size:54px;
+  color:#fff;
+  font-weight:500;
+}
+
+.navbar .logo a span{
+  color:crimson;
+}
+
+
+.navbar .list li{
+  list-style:none;
+  display:inline-block;
+  margin: 0 18px;
+}
+
+.navbar .list li a{
+  color:#fff;
+  font-size:16px;
+  font-weight:500;
+}
+
+.navbar .list li a:hover{
+ color:crimson;
+}
+
+.grow{
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+  transform:scale(1.2);
+}
+
+.navbar .list-btn{
+  color:white;
+  cursor:pointer;
+  display:none;
+}
+
+
+/* ---------------Home styling-------------- */
+
+.home {
+  background-color:black;
+  display:flex;
+  align-items:center;
+  height:100vh;
+  min-height:500px;
+  transition: all 0.2s ease-in-out;
+}
+
+.home .max-width{
+  background-color:black;
+  margin-left:0;
+}
+
+
+.home .max-width .home-content{
+  background-color:black;
+  color:white;
+  font-weight:500;
+}
+
+.home .home-content .text1{
+  font-size:42px;
+  font-weight:400;
+}
+
+.home .home-content .text2{
+  font-size:64px;
+  font-weight:500;
+}
+
+.home .home-content .text3{
+  font-size:42px;
+  font-weight:400;
+}
+
+.home .home-content .text3 span{
+  color:crimson;
+}
+
+.home .hire-btn{
+  margin-top:20px;
+  border-style:solid;
+  display:inline-block;
+  padding:10px;
+  border-radius:5px;
+  margin-top:35px;
+  transition: all 0.4s ease;
+  cursor:pointer;
+}
+
+.home .home-content a{
+  font-size:34px;
+  font-weight:400;
+  color:white;
+}
+
+.home .hire-btn:hover{
+  border-color:crimson;
+  background-color:crimson;
+  transform:scale(1.1)
+}
+
+
+/* ---------------About styling-------------- */
+
+.about-content{
+/*   border:1px dashed; */
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:0 40px;
+  display:flex;
+/*    flex-wrap:wrap; */
+  justify-content:space-between;
+  align-items:center;
+}
+
+.about .about-content .column{
+/*   border:1px solid; */
+  margin:5px;
+}
+
+.about .about-content .left{
+  width:40%;
+}
+
+.about .left .about-img{
+  background-color:crimson;
+  margin:10px auto;
+  height:400px;
+  width:400px;
+  border-radius:20px;
+}
+
+.about .about-content .right{
+  width:55%;
+}
+
+.about .about-content .right .heading{
+  margin:20px 0;
+}
+
+.about .about-content .right .heading span{
+  color:crimson;
+}
+
+.about .about-content .right .para{
+  font-size:18px;
+  font-weigth:400;
+}
+
+
+/* ---------------Skills styling-------------- */
+
+.skills{
+  background-color:black;
+  min-height:500px;
+  }
+
+.skills .title{
+/*   border:solid white; */
+  color:white;
+}
+
+.skills .skills-content{
+/*   border:white solid; */
+  display:flex;
+/*   flex-wrap:wrap; */
+  align-items:center;
+  justify-content:space-between;
+}
+
+.skills .skills-card.grey{
+  background-color:#18191A;
+}
+
+.skills .skills-card.maroon{
+  background-color:rgb(20,7,15,0.7)
+}
+
+.skills .skills-card{
+/*   border:white dotted; */
+  min-height:325px;
+  width:33%;
+  padding:20px;
+  margin:10px;
+  text-align:center;
+  border-radius:8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-card .skills-box span{
+  font-size:100px;
+  color:crimson;
+}
+
+.skills .skills-card .skills-img{
+  height:100px;
+  width:100px;
+  border-radius:15px;
+  margin:auto;
+  background-color:crimson;
+  transition: background-color 0.2s ease;
+}
+
+.skills .skills-card h2{
+  font-size:26px;
+  font-weight:500;
+  padding:30px 0;
+  color:white;
+}
+
+.skills .skills-card p{
+  color:white;
+  width:85%;
+  margin:auto;
+  line-height:25px;
+}
+
+.skills .skills-card:hover{
+  background-color:crimson;
+/*   transform: scale(1.1) */
+}
+
+.skills .skills-card:hover .skills-img{
+  background-color:white;
+}
+
+.skills .skills-card:hover span{
+  color:white;
+}
+
+.skills .skills-card .skills-box{
+  transition:all 0.2s ease;
+}
+
+.skills .skills-card:hover .skills-box{
+  transform: scale(1.05);
+}
+
+
+/* ---------------Prof styling-------------- */
+
+.prof-contents{
+/*   border:1px dashed; */
+  margin:80px 0;
+  display:flex;
+/*    flex-wrap:wrap; */
+  justify-content:space-between;
+  align-items:stretch;
+}
+
+.prof .prof-contents .column{
+/*   border:1px solid; */
+  margin:30px;
+}
+
+.prof .prof-contents .left{
+  /*   border: 2px dotted; */
+  width:50%;
+  display:flex;
+  flex-direction:column;
+}
+
+.prof .prof-contents .left .header{
+  font-size:26px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.prof .prof-contents .left .para{
+  font-size:18px;
+  font-weight:400;
+  text-align:justify;
+  margin-bottom:20px;
+}
+
+.prof .prof-contents .right{
+  width:50%;
+}
+
+.prof .prof-contents .right .bar{
+  margin-bottom:25px;
+}
+
+.prof .prof-contents .right .bar .info{
+/*   border: 2px dotted; */
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:500;
+}
+
+.prof .prof-contents .right .bar .line{
+  height:3px;
+  width:100%;
+  background:lightgrey;
+  margin-top:8px;
+  position:relative;
+}
+
+.prof .prof-contents .right .bar .line::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  background:crimson;
+}
+
+.prof .prof-contents .right .bar .html::before{
+  width:80%;
+}
+
+
+/* ----------------------Team Styling -------------*/
+
+.teams{
+  background-color:black;
+  color:white;
+  min-height:600px;
+}
+
+.teams .teams-card{
+  background-color:#18191A;
+  min-height:365px;
+  padding:20px;
+  text-align:center;
+  border-radius:8px;
+  cursor: pointer;
+/*   display:flex;
+  justify-contents:center;
+  align-items:stretch; */
+  transition: all 0.3s ease;
+}
+
+.teams .teams-card:hover{
+  background-color:crimson;
+}
+.teams .teams-card:hover .teams-img{
+  background-color:white;
+  border-color:#18191A;
+}
+
+.teams .teams-card .teams-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-contents:space-between;
+  padding:10px 0;
+  transition: all 0.3s ease;
+}
+
+.teams .teams-card:hover .teams-box{
+  transform:scale(1.05)
+}
+
+.teams .teams-card .teams-img{
+  background-color:crimson;
+  border:3px solid white;
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  margin:auto;
+}
+
+.teams .teams-card h3{
+  margin:25px auto;
+  font-size:26px;
+}
+
+.teams .teams-card p{
+  line-height:25px;
+}
+
+.teams .owl-carousel .owl-nav{
+  text-align:center;
+  margin:10px 0;
+}
+
+.teams .owl-carousel .owl-nav span{
+  font-size:40px;
+  margin: 0 5px;
+}
+
+.teams .owl-carousel .owl-dots{
+  text-align:center;
+}
+
+
+.owl-dot{
+  height:12px;
+  width:15px;
+  border-radius:10px;
+  border:1px solid crimson!important;
+  margin:3px;
+  transition:all 0.4s ease;
+}
+
+.owl-dot.active{
+  width:30px;
+  background-color:crimson!important;
+}
+
+
+/* ------------connect styling---------------- */
+
+.connect{
+  min-height:500px;
+}
+
+.connect-contents{
+/*   border:1px dashed; */
+  margin:80px 0;
+  display:flex;
+/*    flex-wrap:wrap; */
+  justify-content:space-between;
+  align-items:stretch;
+}
+
+.connect-contents .column{
+/*   border:1px solid; */
+  margin:30px;
+}
+
+.connect-contents .left{
+  width:50%;
+}
+
+.connect-contents .left .header,
+.connect-contents .right .header{
+  font-size:26px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+
+.connect-contents .left .para{
+  font-size:18px;
+  font-weight:400;
+  text-align:justify;
+  margin-bottom:20px;
+}
+
+.connect-contents .left .icons{
+  margin:40px auto;
+}
+
+.connect-contents .left .icons .row{
+  display:flex;
+  align-items:center;
+  margin:5px 0;
+}
+
+.connect .connect-contents .left .icons .row span{
+  font-size:40px;
+  color:crimson;
+}
+
+.connect .connect-contents .left .icons .row .info{
+  margin-left:20px;
+}
+
+.connect .connect-contents .left .icons .row .info p{
+  margin:5px 8px;
+  font-size:18px;
+  font-weight:400;
+}
+
+.connect .connect-contents .left .icons .row .info > :first-child{
+  font-weight:500;
+}
+
+.connect-contents .right{
+  width:50%;
+}
+
+.connect-contents .right .fields{
+/*   border: 1px solid; */
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.connect-contents .right .fields .field{
+  min-height:45px;
+  margin:6px;
+}
+
+.connect-contents .right .fields input,textarea{
+  width:100%;
+  height:100%;
+  border: 2px solid lightgrey;
+  border-radius:5px;
+  outline:none;
+  padding:6px;
+  font-size:15px;
+}
+
+.connect-contents .right .fields .name{
+  width: calc(50% - 12px);
+}
+
+.connect-contents .right .fields .email{
+  width: calc(50% - 12px);
+}
+
+.connect-contents .right .fields .subject{
+  width:100%;
+}
+.connect-contents .right .fields textarea{
+  resize:none;
+}
+
+.connect-contents .right .button{
+  height:45px;
+  width:200px;
+  margin:6px;
+}
+
+.connect-contents .right .button button{
+  height:100%;
+  width:100%;
+  border-radius:6px;
+  border:2px solid crimson;
+  background-color:crimson;
+  font-size:18px;
+  color:white;
+  transition:all 0.3s ease;
+}
+
+.connect-contents .right .button button:hover{
+  background-color:white;
+  color:crimson;
+}
+
+footer{
+  background-color:black;
+  color:white;
+  min-height:80px;
+  text-align:center;
+  padding:30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------RESPONSIVE STYLING------------ */
+
+
+
+
+@media (max-width:1199px){
+  
+  .about .left .about-img{
+/*   margin:10px auto; */
+  height:300px;
+  width:300px;
+  }
+  
+  .about .about-content .right .text{
+  font-size:20px;
+  font-weigth:300;
+  text-align:justify;
+  }
+  
+  .skills .skills-content{
+   flex-wrap:wrap;
+  }
+
+  .skills .skills-card{
+    width:45%;
+  }
+  
+}
+
+
+
+
+
+
+@media (max-width:1000px){
+    .navbar .logo a{
+    font-size:30px; 
+   }
+
+    .navbar .list-btn{
+      display:inline-block;
+       z-index:999;
+    }
+
+    .navbar .list{
+    position:fixed;
+    background-color:black;
+    height:100vh;
+    width:100%;
+    left:-100%;
+    top:0;
+    text-align:center;
+    padding-top:50px;
+      transition: all 0.2s ease;
+    }
+
+    .navbar .list.active{
+      left:0;
+    }
+
+    .navbar .list li{
+      display:block;
+      margin:30px 0;
+    }
+
+    .navbar .list a{
+      display:inline-block;
+    }
+
+  /*   .navbar .list-btn{
+      display:block;
+      position:fixed;
+      right:0;
+      margin-right:30px;
+      z-index:999;
+    } */
+
+   .home {
+    height:60vh;
+    min-height:150px;
+    }
+
+    .home .home-content .text1{
+    font-size:24px;
+    font-weight:400;
+     }
+
+  .home .home-content .text2{
+    font-size:30px;
+    font-weight:500;
+   }
+
+  .home .home-content .text3{
+    font-size:24px;
+    font-weight:400;
+   }
+
+   .home .home-content a{
+    font-size:24px;
+  }
+
+   .title{
+/*      border:1px dashed; */
+     font-size:24px;
+     padding:10px;
+    }
+
+    .about-content{
+/*     border:1px dashed; */
+    margin-top:50px;
+  /*   padding:0 40px; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    }
+
+
+  .about .about-content .column{
+  /*   border:1px solid; */
+  /*   margin:5px; */
+  }
+
+  .about .about-content .left{
+    width:100%;
+  }
+
+  .about .left .about-img{
+    background-color:crimson;
+  /*   margin:10px auto; */
+    height:200px;
+    width:200px;
+    border-radius:20px;
+
+  }
+
+  .about .about-content .right{
+    width:100%;
+  }
+
+  .about .about-content .right .heading{
+  /*   margin:20px 0; */
+    text-align:center;
+
+  }
+
+  .about .about-content .right .heading span{
+    color:crimson;
+  }
+
+  .about .about-content .right .text{
+    font-size:15px;
+    font-weigth:300;
+    text-align:justify;
+  }
+  
+  .skills .skills-card{
+    min-height:auto;
+  }
+  
+  .skills .skills-card h2{
+    font-size:20px;
+    font-weight:500;
+  }
+  
+  .skills .skills-card p{
+    font-size:15px;
+    width:100%;
+  }
+  
+  
+  
+  .prof .prof-contents .left .header{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:10px;
+  }
+  
+  .prof .prof-contents .left p{
+    font-size:15px;
+    font-weigth:300;
+    text-align:justify;
+  }
+  
+  .teams .teams-card h3{
+  margin:15px;
+  font-size:20px;
+}
+  
+  .teams .teams-card p{
+    font-size:15px;
+  }
+
+
+}
+
+@media (max-width:980px){
+  
+  .skills{
+    padding:10px 0;
+  }
+  
+  .skills .skills-content{
+    margin:10px auto;
+  }
+  
+  .skills .skills-card{
+    padding:20px;
+    margin:10px auto;
+  }
+  
+  .connect-contents{
+    flex-wrap:wrap;
+  }
+  
+  .connect-contents .left,
+  .connect-contents .right{
+    width:100%;
+  }
+}
+
+
+@media (max-width:779px){
+  .skills .skills-card{
+    width:auto;
+    }
+  
+  .prof .prof-contents{
+    flex-wrap:wrap;
+    margin-top:25px;
+  }
+  
+  .prof .prof-contents .right{
+    width:100%;
+  }
+  
+  .prof .prof-contents .left{
+    width:auto;
+  }
+  
+  .prof .prof-contents .left .header{
+    text-align:center;
+  }
+  
+}
+
+
+@media (max-width:500px){
+  
+ .max-width{
+  padding:0;
+  margin:auto;
+  }
+
+  .home .max-width{
+    margin:auto;
+  }
+
+  .home-content{
+    text-align:center;
+  }
+  
+  .skills .skills-card{
+    width:90%;
+   }
+    
+}
