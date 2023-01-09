@@ -38,7 +38,7 @@ html {
 .scroll-up-btn.show{
   opacity:0.4;
   pointer-events:auto;
-  
+  z-index:9999;
 }
 
 .scroll-up-btn:hover{
@@ -85,6 +85,7 @@ html {
 }
 
 .navbar .list li a{
+  display:block;
   color:#fff;
   font-size:16px;
   font-weight:500;
@@ -907,6 +908,7 @@ footer{
   
   .prof .prof-contents .left .para{
     font-size:15px;
+    text-align:justify;
   }
   
   .connect .connect-contents{
