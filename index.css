@@ -205,6 +205,12 @@ html {
   border-radius:20px;
 }
 
+.about .left .about-img img{
+  height:400px;
+  width:400px;
+  object-fit:cover;
+}
+
 .about .about-content .right{
   width:55%;
 }
